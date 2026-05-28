@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neem contact op met Sarina Chotoe - SNE Student aan UNASAT.">
+  <title>Contact | Sarina Chotoe Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- Glowing Background Aura -->
+  <div class="glow-container">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">&lt;</span>Sarina<span class="logo-accent">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">Over Mij</a></li>
+        <li><a href="index.html#skills" class="nav-link">Vaardigheden</a></li>
+        <li><a href="work.html" class="nav-link">Projecten</a></li>
+        <li><a href="index.html#experience" class="nav-link">Ervaring &amp; Opleiding</a></li>
+        <li><a href="index.html#hobbies" class="nav-link">Hobby's</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="contact" class="contact-section container">
+      <div class="section-header">
+        <span class="section-tag text-gradient">06 // Connectie</span>
+        <h1 class="section-title">Neem Contact Op</h1>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info glass-panel">
+          <h3>Laten we samenwerken aan iets moois.</h3>
+          <p class="contact-info-text">
+            Ik sta altijd open voor interessante projecten, studie-uitdagingen of gewoon een leuk gesprek over System &amp; Network Engineering. Stuur gerust een bericht!
+          </p>
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <i data-feather="mail" class="contact-detail-icon"></i>
+              <div>
+                <span class="contact-label">E-mailadres</span>
+                <a href="mailto:s.chotoe@unasat.sr" class="contact-link">s.chotoe@unasat.sr</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <i data-feather="phone" class="contact-detail-icon"></i>
+              <div>
+                <span class="contact-label">Telefoonnummer</span>
+                <a href="tel:8824303" class="contact-link">8824303</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <i data-feather="map-pin" class="contact-detail-icon"></i>
+              <div>
+                <span class="contact-label">Locatie</span>
+                <span class="contact-value">Saramacca, Suriname</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-links-row">
+            <a href="mailto:s.chotoe@unasat.sr" class="social-icon-btn" title="E-mail"><i data-feather="mail"></i></a>
+            <a href="tel:8824303" class="social-icon-btn" title="Bellen"><i data-feather="phone"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper glass-panel">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Volledige Naam</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Je naam" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">E-mailadres</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="je.email@voorbeeld.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Onderwerp</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Onderwerp van je bericht" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Bericht</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Typ hier je bericht..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn">Verzend Bericht <i data-feather="send"></i></button>
+          </form>
+          <div id="form-feedback" class="form-feedback hidden glass-panel"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Sarina Chotoe. Alle rechten voorbehouden.</p>
+      <p>Ontworpen en ontwikkeld met passie en vanilla HTML/CSS/JS.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

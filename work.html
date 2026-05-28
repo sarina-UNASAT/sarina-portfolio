@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projecten van Sarina Chotoe - SNE Student aan UNASAT.">
+  <title>Projecten | Sarina Chotoe Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/work.css">
+</head>
+<body>
+
+  <!-- Glowing Background Aura -->
+  <div class="glow-container">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">&lt;</span>Sarina<span class="logo-accent">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">Over Mij</a></li>
+        <li><a href="index.html#skills" class="nav-link">Vaardigheden</a></li>
+        <li><a href="work.html" class="nav-link active">Projecten</a></li>
+        <li><a href="index.html#experience" class="nav-link">Ervaring &amp; Opleiding</a></li>
+        <li><a href="index.html#hobbies" class="nav-link">Hobby's</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="work-hero container">
+      <div class="section-header">
+        <span class="section-tag text-gradient">03 // Projecten</span>
+        <h1 class="section-title">Schoolprojecten</h1>
+        <p class="work-intro">Een overzicht van projecten en labs die ik heb uitgevoerd tijdens mijn SNE-opleiding aan UNASAT.</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Alles</button>
+        <button class="filter-btn" data-filter="network">Netwerken &amp; Linux</button>
+        <button class="filter-btn" data-filter="db">Databases</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-panel" data-category="network">
+          <div class="project-image-wrapper">
+            <img src="img/project-1.png" alt="Linux Server Lab project screenshot" class="project-img">
+          </div>
+          <div class="project-details">
+            <div class="project-header">
+              <span class="project-category">Gevirtualiseerde Systemen</span>
+              <a href="#" class="project-link-simple" title="Project Details"><i data-feather="external-link"></i></a>
+            </div>
+            <h3 class="project-title">Linux Server Lab</h3>
+            <p class="project-description">Het configureren van beveiligde Linux serveromgevingen binnen Oracle VirtualBox, inclusief netwerkinterfaces en Apache webhosting.</p>
+            <div class="project-tags">
+              <span>Linux</span>
+              <span>VirtualBox</span>
+              <span>System Admin</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-panel" data-category="db">
+          <div class="project-image-wrapper">
+            <img src="img/project-2.png" alt="MySQL Database Systeem project screenshot" class="project-img">
+          </div>
+          <div class="project-details">
+            <div class="project-header">
+              <span class="project-category">Database Ontwerp</span>
+              <a href="#" class="project-link-simple" title="Database Diagram"><i data-feather="external-link"></i></a>
+            </div>
+            <h3 class="project-title">MySQL Database Systeem</h3>
+            <p class="project-description">Ontwerp en implementatie van relationele databases voor schoolopdrachten, inclusief normalisatie en complexe SQL-queries.</p>
+            <div class="project-tags">
+              <span>MySQL</span>
+              <span>SQL-queries</span>
+              <span>Databeheer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-panel" data-category="web">
+          <div class="project-image-wrapper">
+            <img src="img/project-3.png" alt="Responsive HTML CSS Labs project screenshot" class="project-img">
+          </div>
+          <div class="project-details">
+            <div class="project-header">
+              <span class="project-category">Web Development</span>
+              <a href="#" class="project-link-simple" title="Live Preview"><i data-feather="external-link"></i></a>
+            </div>
+            <h3 class="project-title">Responsive HTML &amp; CSS Labs</h3>
+            <p class="project-description">Het ontwerpen en bouwen van moderne, responsive user interfaces en studentenlabs met schone HTML5- en CSS3-code.</p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Sarina Chotoe. Alle rechten voorbehouden.</p>
+      <p>Ontworpen en ontwikkeld met passie en vanilla HTML/CSS/JS.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
